@@ -15,6 +15,8 @@
 
 ## 架构
 
+![系统硬件架构](assets/architecture.png)
+
 ```
 [花盆土壤] → ESP32(Wi-Fi, 30min/次) → Flask 后端 → SQLite
                                           ↓
@@ -42,6 +44,8 @@ LLM 故障时自动降级为固定格式文案，通知功能永不失效。
 
 > 每只传感器的干湿读数不同，更换传感器需重新标定（悬空记 `CALIB_DRY`，  
 > 泡水记 `CALIB_WET`，填入 `plant_interpreter.ino` 顶部）。
+
+![硬件实物接线](assets/hardware_wiring.jpg)
 
 ## 快速开始
 
